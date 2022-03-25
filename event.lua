@@ -529,7 +529,7 @@ local playerData = DataHandler.new(module.name, {
 	},
 	hotfixCheckRewardsDuplicate = {
 		index = 3,
-		default = false
+		default = 0
 	}
 })
 
@@ -776,7 +776,7 @@ consumables = {
 
 local npcs = {
 	neige = {
-		title = 92,
+		title = 539,
 		female = true,
 
 		look = "16;181_DED5BF+DED5BF+DED5BF,0,0,22_DED5BF,60_B85677+9E324E+900F31+85354A+B45770+B34865+A63452+900F31+CC6E8D+AF546C,0,0,23,24_F7EEE1+DED5BF+DED5BF+DED5BF",
@@ -1701,7 +1701,7 @@ do
 		local superEggs = self.cache.eggs[module.totalNormalSets + 1]
 
 		local hotfixCheckRewardsDuplicate = playerData:get(self.playerName,
-			"hotfixCheckRewardsDuplicate")
+			"hotfixCheckRewardsDuplicate") ~= 3
 
 		local tmpFlag
 		for set = 1, #superEggs do
@@ -1709,7 +1709,7 @@ do
 				tmpFlag = 2 ^ (set - 1)
 
 				local notGiven = band(tmpFlag, rewards) == 0
-				if not hotfixCheckRewardsDuplicate or notGiven then -- No reward given
+				if hotfixCheckRewardsDuplicate or notGiven then -- No reward given
 					for _, reward in next, module.reward[set] do
 						system.giveEventGift(self.playerName, reward)
 					end
@@ -1727,7 +1727,7 @@ do
 		end
 
 		playerData
-			:set(self.playerName, "hotfixCheckRewardsDuplicate", true)
+			:set(self.playerName, "hotfixCheckRewardsDuplicate", 3)
 			:save(self.playerName)
 
 		return self
@@ -2059,7 +2059,7 @@ eventPlayerBonusGrabbed = function(playerName, id)
 		:new()
 		:generate({
 			totalValues = (
-				(totalCompleteEggSets <= 1 and 2)
+				(totalCompleteEggSets == 1 and 2)
 				or
 				math_random(2, 3)
 			),
@@ -2072,7 +2072,7 @@ eventPlayerBonusGrabbed = function(playerName, id)
 				20
 			),
 
-			canHaveNegativeNumbers = true,--cache.totalCompleteEggSets > 0,
+			canHaveNegativeNumbers = cache.totalCompleteEggSets >= 0,
 
 			canHaveDivision = cache.totalCompleteEggSets >= 2
 		})
@@ -2173,3 +2173,8 @@ tfm.exec.disableMortCommand()
 tfm.exec.disableAfkDeath()
 
 tfm.exec.newGame(getDespawnableGrounds(getMapSettingsAndSections(table_random(module.maps))))
+
+-- DEBUG
+system.newTimer(function()
+	tfm.exec.chatMessage("Works", "Bolodefchoco#0015")
+end, 1000, false)
