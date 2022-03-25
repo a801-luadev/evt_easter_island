@@ -87,7 +87,7 @@ do
 		en = {
 			greetingByProgress = {
 				[0] = "<CH>Welcome to the <CEP><i>Rabbit's Skull Archipelago</i></CEP>, sailormouse.\n\nMost brave mice who tried to get into our <b>magical jungle</b> never lived to tell the tale.\n\nI'm <b>Neige</b>, and I can take you out of here if you explore and bring me the <CEP><i>Lost Eggs of Easter</i></CEP> - ancient, magical eggs that lie around the islands!",
-				[1] = "<CH>Well, well, well... Some bushes later, look who's back with some shiny eggs.\n\nI have to admit I am quite impressed with your performance so far. How come have you survived all traps?",
+				[1] = "<CH>Well, well, well... Some bushes later, look who's back with some shiny eggs.\n\nI have to admit I am quite impressed with your performance so far. How did you survive all traps?",
 				[2] = "<CH>You are definitely a true legend. Hand me these magical eggs and you shall be greatly gifted for that!",
 				[3] = "<CEP>Arrrrr, you got them all\n<CH><i>It's time to use th-...</i> To take you back home!"
 			},
@@ -883,10 +883,10 @@ local formulaInputTimingWeights = multiplyWeightsByBase {
 		_time = math_ceil(module.timeToInput / 2),
 
 		[timeWeightType.trap] = 0,
-		[timeWeightType.rareEgg] = 3/100,
-		[timeWeightType.consumables] = 25/100,
-		[timeWeightType.egg] = 26/100,
-		[timeWeightType.nothing] = 46/100
+		[timeWeightType.rareEgg] = 8/100,
+		[timeWeightType.consumables] = 23/100,
+		[timeWeightType.egg] = 25/100,
+		[timeWeightType.nothing] = 44/100
 	},
 
 	-- correct with more than half time remainig
@@ -894,17 +894,17 @@ local formulaInputTimingWeights = multiplyWeightsByBase {
 		_time = module.timeToInput,
 
 		[timeWeightType.trap] = 0,
-		[timeWeightType.rareEgg] = 5/80,
-		[timeWeightType.consumables] = 12/80,
+		[timeWeightType.rareEgg] = 8/80,
+		[timeWeightType.consumables] = 11/80,
 		[timeWeightType.egg] = 23/80,
-		[timeWeightType.nothing] = 40/80
+		[timeWeightType.nothing] = 38/80
 	}
 }
 
 local eggSetRarity = multiplyWeightsByBase {
-	[1] = 25/38,
-	[2] = 10/38,
-	[3] = 3/38
+	[1] = 30/50,
+	[2] = 15/50,
+	[3] = 5/50
 }
 
 local eggsRarity = multiplyWeightsByBase {
@@ -1505,9 +1505,10 @@ do
 	end
 
 	Formula.setStr = function(self)
-		self.str = tbl_concat(self.tree, ' ')
-
-		self.beautifiedStr = str_gsub(self.str, operators.signs.match, operators.signs)
+		self.str = tbl_concat(self.tree, ' ') -- 1-1 = 1 - 1
+		self.str = str_gsub(self.str, "([%-%+]) (%-%d+)", "%1 (%2)") -- 1 - -1 = 1 - (-1)
+		self.str = str_gsub(self.str, operators.signs.match, operators.signs) -- 1 * 1 = 1 × 1
+		self.beautifiedStr = self.str
 
 		return self
 	end
@@ -1709,7 +1710,7 @@ do
 				tmpFlag = 2 ^ (set - 1)
 
 				local notGiven = band(tmpFlag, rewards) == 0
-				if hotfixCheckRewardsDuplicate or notGiven then -- No reward given
+				if (hotfixCheckRewardsDuplicate and set ~= 2) or notGiven then -- No reward given
 					for _, reward in next, module.reward[set] do
 						system.giveEventGift(self.playerName, reward)
 					end
@@ -2072,7 +2073,7 @@ eventPlayerBonusGrabbed = function(playerName, id)
 				20
 			),
 
-			canHaveNegativeNumbers = cache.totalCompleteEggSets >= 0,
+			canHaveNegativeNumbers = cache.totalCompleteEggSets > 0,
 
 			canHaveDivision = cache.totalCompleteEggSets >= 2
 		})
@@ -2171,5 +2172,6 @@ tfm.exec.disableDebugCommand()
 tfm.exec.disablePhysicalConsumables()
 tfm.exec.disableMortCommand()
 tfm.exec.disableAfkDeath()
+tfm.exec.setAutoMapFlipMode(false)
 
 tfm.exec.newGame(getDespawnableGrounds(getMapSettingsAndSections(table_random(module.maps))))
