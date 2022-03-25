@@ -2173,8 +2173,3 @@ tfm.exec.disableMortCommand()
 tfm.exec.disableAfkDeath()
 
 tfm.exec.newGame(getDespawnableGrounds(getMapSettingsAndSections(table_random(module.maps))))
-
--- DEBUG
-system.newTimer(function()
-	tfm.exec.chatMessage("Works", "Bolodefchoco#0015")
-end, 1000, false)
