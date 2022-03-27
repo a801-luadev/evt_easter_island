@@ -91,9 +91,6 @@ do
 				[2] = "<CH>You are definitely a true legend. Hand me these magical eggs and you shall be greatly gifted for that!",
 				[3] = "<CEP>Arrrrr, you got them all\n<CH><i>It's time to use th-...</i> To take you back home!"
 			},
-			rewardMessage = {
-				[2] = "<J>Arrr! Don't be spending all your gold yet! You may meet a NPC soon for some chests instead!"
-			},
 			credits = "<CEP>Easter eggs only were possible thanks to the pirate developer <CH>%s</CH>, the artists worth their weight in gold <CH>%s</CH> and the ideas of the explorer <CH>%s</CH>."
 		},
 		br = {
@@ -102,9 +99,6 @@ do
 				[1] = "<CH>Ora, ora, ora... Alguns arbustos depois, olha quem voltou com alguns ovos brilhantes.\n\nTenho que admitir que estou impressionado com o seu desempenho até agora. Como você sobreviveu a todas essas armadilhas?",
 				[2] = "<CH>Definitivamente você é uma lenda viva. Me dê estes ovos mágicos e você receberá ótimas recompensas por isso!",
 				[3] = "<CEP>Arrrrr, você pegou todos eles\n<CH><i>É hora de usá-los pro-...</i> Hora de te levar pra casa!"
-			},
-			rewardMessage = {
-				[2] = "<J>Arrr! Não gaste todo o seu ouro ainda! Você pode encontrar um NPC em breve para alguns comprar alguns baús!"
 			},
 			credits = "<CEP>Os ovos de páscoa só foram possíveis graças ao desenvolvedor pirata <CH>%s</CH>, aos artitas que valem seu peso em ouro <CH>%s</CH> e as ideias do explorador <CH>%s</CH>."
 		},
@@ -115,22 +109,16 @@ do
 				[2] = "<CH>Eres definitivamente una verdadera leyenda. ¡Pásame esos huevos mágicos y recibiras grandes recompensas por lo que has hecho!",
 				[3] = "<CEP>Arrrrr, los conseguiste a todos\n<CH>¡<i>Es hora de usar los-...</i> De llevarte de vuelta a casa!"
 			},
-			rewardMessage = {
-				[2] = "<J>¡Arrr! ¡No gastes todo tu oro aún! ¡Puedes encontrarte con un NPC pronto que te lo cambiará por cofres!"
-			},
 			credits = "<CEP>Los huevos de Pascua fueron posible gracias al desarrollador pirata <CH>%s</CH>, los artistas que valen su peso en oro <CH>%s</CH> y las ideas del aventurero <CH>%s</CH>."
 		},
- 		fr = {
+		fr = {
 			greetingByProgress = {
-				[0] = "<CH>Bienvenue à <CEP><i>L'archipel de Crânes du Lapin</i></CEP>, souris navigatrice.\n\nLes plus courageuses souris qui ont tenté d'entrer dans notre <b>jungle magique</b> n'ont pas pu s'en sortir pour pouvoir raconter leur aventure.\n\nJe m'appelle <b>Neige</b>, et je peux te sortir d'ici si tu pars en exploration pour m'apporter les <CEP><i>Oeufs de Pâques Perdus</i></CEP> - anciens oeufs magiques qui se retrouvent sur ces îles!",
-				[1] = "<CH>Bon! Après avoir cherché dans quelques buissons, voilà qui m'apporte des oeufs brillants. \n\nJe dois admettre que ta performance jusqu'à maintenant m'impressionne. Comment as-tu pu survivre aux pièges?",
-				[2] = "<CH>Tu es une souris légendaire. Après que tu m'apporteras les oeufs magiques, je vais te récompenser généreusement!",
-				[3] = "<CEP>Arrrrr, tu les a tous trouvés\n<CH><i>Il est temps de les utiliser-...</i> Euh, de te porter chez toi!"
+				[0] = "<CH>Bienvenue à <CEP><i>L'archipel du Crâne de Lapin</i></CEP>, souris navigatrice.\n\nLes souris les plus courageuses qui ont tenté d'entrer dans notre <b>jungle magique</b> n'ont pas pu s'en sortir pour pouvoir raconter leur aventure.\n\nJe m'appelle <b>Neige</b>, et je peux te sortir d'ici si tu pars en exploration pour m'apporter les <CEP><i>Œufs de Pâques Perdus</i></CEP> - anciens œufs magiques qui se retrouvent sur ces îles !",
+				[1] = "<CH>Eh bien, eh bien, eh bien... Après avoir cherché dans quelques buissons, regardez qui est de retour avec des œufs brillants. \n\nJe dois admettre que je suis assez impressionée par ta performance jusqu'à maintenant. Comment as-tu survécu à tous les pièges ?",
+				[2] = "<CH>Tu es définitivement une vraie légende. Remets-moi ces œufs magiques et tu seras généreusement récompensée !",
+				[3] = "<CEP>Arrrrr, tu les as tous trouvés\n<CH><i>Il est temps de les utiliser-...</i> Euh, de te ramener chez toi !"
 			},
-			rewardMessage = {
-				[2] = "<J>Arrr! Ne dépense pas déjà tout ton or! Tu pourras peut-être rencontrer un NPC bientôt pour des coffres!"
-			},
-			credits = "<CEP>Les Oeufs de Pâques ont été réalisés grâce au dévélopeur pirate <CH>%s</CH>, les artistes qui valent leur poids en or <CH>%s</CH> et les idées de l'explorateur <CH>%s</CH>."
+			credits = "<CEP>Les Œufs de Pâques ont été réalisés grâce au développeur pirate <CH>%s</CH>, les artistes qui valent leur poids en or <CH>%s</CH> et les idées de l'explorateur <CH>%s</CH>."
 		},
 		it = {
 			greetingByProgress = {
@@ -138,9 +126,6 @@ do
 				[1] = "<CH>Bene, bene, bene... Dopo qualche cespuglio e rovo, guarda chi è tornato con delle uova luccicanti.\n\nDevo ammettere che sono rimasto abbastanza colpito dalla tua performance finora. Come sei sopravvissuto a tutte le trappole?",
 				[2] = "<CH>Sei di certo una vera leggenda. Passami queste uova magiche e sarai altamente ricompensato!",
 				[3] = "<CEP>Arrrrr, le hai tutte\n<CH><i>È ora di usare le...</i> Per riportarti a casa!"
-			},
-			rewardMessage = {
-				[2] = "<J>Arrr! Non spendere ancora tutto il tuo oro! Potresti incontrare presto un NPC per alcuni forzieri!"
 			},
 			credits = "<CEP>Questo evento è stato possibile solo grazie allo sviluppatore pirata <CH>%s</CH>, gli artisti che valgono tutto l'oro del mondo <CH>%s</CH> e le idee dell'esploratore <CH>%s</CH>."
 		},
@@ -151,9 +136,6 @@ do
 				[2] = "<CH>Egy igazi legenda vagy! Add át nekem a tojásokat, és bőségesen megjutalmazlak cserébe.",
 				[3] = "<CEP>Arrrrr, hát mind megvan\n<CH><i>Itt az idő a s-...</i> Hogy hazavigyelek!"
 			},
-			rewardMessage = {
-				[2] = "<J>Arrr! Nehogy egyből elköltsd az összes aranyad! Hamarosan találkozhatsz egy NPC-vel, akitől ládákat is vásárolhatsz!"
-			},
 			credits = "<CEP>A húsvéti szigetek rejtelmei nem valósulhattak volna meg a programozó <CH>%s</CH>, a minden aranyat megérő művész <CH>%s</CH> és a kalandozó lelkű ötletgazda <CH>%s</CH> nélkül."
 		},
 		ru = {
@@ -162,9 +144,6 @@ do
 				[1] = "<CH>Так, так, так... Пара кустов спустя, смотри кто пришёл с корзиной блестящих яиц.\n\nЯ вынуждена признать я удивлена твоим успехом. Как же ты прошёл(ла) мимо всех ловушек?",
 				[2] = "<CH>Ты действительно живая легенда. Дай-ка мне те магические яйца и ты получишь щедрую награду!",
 				[3] = "<CEP>Арррр, ты собрал(а) их всех.\n<CH><i>Пора использ-...</i> провести тебя домой!"
-			},
-			rewardMessage = {
-				[2] = "<J>Аррр! Не трать своё золото так быстро! Ты скоро встретишь одного NPC чтобы купить сундук!"
 			},
 			credits = "<CEP>Пасхальная охота на яйца была возможна только благодаря разработчику-пирату <CH>%s</CH>, артистам стоящих золота <CH>%s</CH> и идеям разветчика <CH>%s</CH>."
 		},
@@ -175,9 +154,6 @@ do
 				[2] = "<CH>Ești un șoricel legendar. După ce-mi aduci ouăle magice te voi recompensa generos!",
 				[3] = "<CEP>Arrrrr, le-ai adunat pe toate\n<CH><i>Acum, pot să le folosesc-...</i> Adică, să te duc acasă!"
 			},
-			rewardMessage = {
-				[2] = "<J>Arrr! Nu-ți cheltui deja tot aurul! Poate vei întâlni un NPC în curând pentru niște comori!"
-			},
 			credits = "<CEP>Ouăle de paști sunt realizate datorită dezvoltatorului pirat <CH>%s</CH>, artiștii care-și merită greutatea în aur <CH>%s</CH> și ideile exploratorului <CH>%s</CH>."
 		},
 		pl = {
@@ -185,10 +161,7 @@ do
 				[0] = "<CH>Witamy w <CEP><i>Archipelagu Króliczej Czaszki </i></CEP>, marynarzu.\n\nNajodważniejsze myszki, które próbowały się dostać do naszej <b>magicznej dżungli</b> nie przeżyły, by opowiedzieć tę historię.\n\nJestem <b>Neige</b> i mogę Cię stąd zabrać, jeśli odkryjesz i przyniesiesz mi <CEP><i>zaginione jajka Wielkanocy</i></CEP> - starożytne, magiczne jajka, które leżą wokół wysp!",
 				[1] = "<CH>No, no, no…Trochę czasu minęło, zobacz kto wrócił z błyszczącymi jajkami.\n\nMuszę przyznać, że do tej pory jestem pod dużym wrażeniem Twoich umiejętności. Jak to się stało, że udało Ci się pokonać wszystkie pułapki?",
 				[2] = "<CH>Zdecydowanie jesteś prawdziwą legendą. Podaj mi te magiczne jajka, a będziesz za to wielce nagrodzony!",
-				[3] = "<CEP>Arrrrr, zebrałeś wszystkie jajka\n<CH><i>Nadszedł czas, by użyć ja-...</i> By zabrać Cię do domu!" -- "It's time to use (the eggs for the evil)", but cut it in the middle so they don't get it. As if the evil plan was a plot for another series season. Then "...", then "To bring you back home"
-			},
-			rewardMessage = {
-				[1] = "<J>Arrr! Nie wydawaj jeszcze całego swojego złota! Niedługo możesz spotkać się z NPC, by wymienić je na skrzynie!"
+				[3] = "<CEP>Arrrrr, zebrałeś wszystkie jajka\n<CH><i>Nadszedł czas, by użyć ja-...</i> By zabrać Cię do domu!"
 			},
 			credits = "<CEP>Wielkanocne jajka były możliwe tylko dzięki pirackiemu programiście <CH>%s</CH>, artystom na wagę złota <CH>%s</CH> i pomysłom odkrywcy <CH>%s</CH>."
 		},
@@ -199,9 +172,6 @@ do
 				[2] = "<CH>Sen kesinlikle gerçek bir efsane olmalısın. Sihirli yumurtaları bana ver ki bunun için bol miktarda ödülllendirilebilesin!",
 				[3] = "<CEP>Arrrrr, hepsini topladın\n<CH><i>Şimdi sıra onları amacımız için kullanma vakti, k-…</i> kolaylıklıkla eve dönebilmek için!"
 			},
-			rewardMessage = {
-				[2] = "<J>Arrr! Bütün altınını hemen harcama! İlerleyen zamanlarda sandık elde edebileceğin bir NPC ile karşılaşabilirsin!"
-			},
 			credits = "<CEP>Paskalya yumurtaları, sadece geliştirici korsan <CH>%s</CH>, ağırlığınca altını hak eden çizerler <CH>%s</CH> ve kaşif <CH>%s</CH>’ın fikirleri sayesinde gerçekleştirilebildi."
 		},
 		ar = {
@@ -210,9 +180,6 @@ do
 				[1] = "<CH>.حسنا.. بعد البحث بين الشجيرات, انظر إلى من عاد مع بعض البيض اللامع \n\n يجب أن أعترف أنني معجب جدًا بأدائك حتى الآن. كيف نجوت من كل الفخاخ؟",
 				[2] = "<CH>! أنت بالتأكيد أسطورة حقيقية.سلمني هذا البيض السحري وسوف أكافئك",
 				[3] = "<CEP>مذهل... لقد حصلت عليها جميعًا \n<CH> <i>! حان الوقت لاستخدام الـ... </i> لإعادتك إلى المنزل"
-			},
-			rewardMessage = {
-				[2] = "<J>. لا تنفق كل ما تجمعه من الذهب حتى الآن \n\n! سوف تقابل شخصية من اللعبة قريبًا لتبادله مع كنز بدلاً من ذلك"
 			},
 			credits = "<CEP><CH>٪s</CH> كان عيد الفصح ممكنًا فقط بفضل المطور القرصان \n\n <CH>٪s</CH> والفنانين الذين يستحقون وزنهم ذهب\n\n <CH>٪s</CH> وأفكار المستكشف"
 		},
@@ -671,6 +638,7 @@ images = {
 	},
 	backgroundPixel = "17f18a77483.png",
 	nest = "17ee1ab83bc.png",
+	warning = "17fcd9638dd.png",
 	inputInterface = {
 		"17f86a5142d.png",
 		"17f868c91e1.png",
@@ -1144,6 +1112,13 @@ local killAllActiveSections = function()
 	end
 end
 
+local warnFallingSection = function(groundID)
+	local section = mapSettings.sections[groundID]
+
+	timer:start(tfm.exec.removeImage, 1500, 1,
+		tfm.exec.addImage(images.warning, "!100", section.x + section.width / 2, section.y + 50))
+end
+
 local getDespawnableGrounds = function(xml)
 	local grounds, totalGrounds = { }, 0
 	for ground in str_gmatch(xml, "lua=\"(%d+)\"") do
@@ -1174,6 +1149,7 @@ local getDespawnableGrounds = function(xml)
 
 		xml = str_gsub(xml, "<S [^/]-despawn=\"" .. ground .. "\"[^/]-/>", populateWaterGrounds)
 		timer:start(despawnSection, randomDespawnTime, 1, ground, false)
+		timer:start(warnFallingSection, randomDespawnTime - 2000, 1, ground)
 
 		tbl_remove(grounds, groundIndex)
 	until not grounds[1]
@@ -1758,10 +1734,6 @@ do
 						rewards = rewards + tmpFlag
 						playerData:set(self.playerName, "rewards", rewards)
 					end
-
-					if translation.rewardMessage[set] then
-						tfm.exec.chatMessage(translation.rewardMessage[set], self.playerName)
-					end
 				end
 			end
 		end
@@ -2078,15 +2050,15 @@ eventPlayerBonusGrabbed = function(playerName, id)
 			totalValues = (
 				(totalCompleteEggSets == 1 and 2)
 				or
-				math_random(2, 3)
+				(math_random(1, 100) < 60 and 2 or 3)
 			),
 
 			numberRange = (
 				(totalCompleteEggSets == 0 and 12)
 				or
-				(totalCompleteEggSets == 1 and 15)
+				(totalCompleteEggSets == 1 and 14)
 				or
-				20
+				16
 			),
 
 			canHaveNegativeNumbers = cache.totalCompleteEggSets > 0,
